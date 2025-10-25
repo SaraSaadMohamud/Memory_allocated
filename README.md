@@ -48,7 +48,8 @@ The code is educational, demonstrating core concepts of dynamic memory managemen
 
 ### Insertion Sort in `ChunkListInsert`
 The list is kept sorted by chunk start address. After appending a new chunk, it bubbles the new element leftward if it's out of order. This ensures `ChunkListFind` can rely on positional hints (though it's still linear-time).
-
+## Flowchart
+ <img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/97fd6c9d-55f3-49d1-9321-a006065fed24" />
 
 ## Future Improvements
 - Implement `HeapCollect` for merging adjacent free chunks (sort frees and scan for contiguous blocks).
