@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements a basic **heap memory allocator** in C, providing custom versions of `malloc` and `free` functions (`HeapMalloc` and `HeapFree`). It manages a fixed-size heap (640 KB) using two lists of memory chunks: one for allocated blocks and one for freed blocks. The allocator uses a **first-fit** strategy to allocate memory from free chunks and supports splitting large free chunks when necessary. However, it does not yet implement garbage collection or merging of adjacent free chunks (see [Limitations](#limitations)).
+This project implements a basic **heap memory allocator** in C, providing custom versions of `malloc` and `free` functions (`HeapMalloc` and `HeapFree`). It manages a fixed-size heap (640 KB) using two lists of memory chunks: one for allocated blocks and one for freed blocks. The allocator uses a **first-fit** strategy to allocate memory from free chunks and supports splitting large free chunks when necessary. However, it does not yet implement garbage collection or merging of adjacent free chunks.
 
 The code is educational, demonstrating core concepts of dynamic memory management without relying on the standard library's allocator. It includes debugging utilities like chunk list dumping and assertions for safety.
 
